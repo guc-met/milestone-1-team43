@@ -243,6 +243,22 @@ export default function Profile() {
                       </Form.Group>
 </tr>
 </table>
+
+
+<tr>
+                          <Button style={{  height: '2vw',
+                  display: 'flex',
+                  alignSelf: 'center',
+                  marginRight: 'auto',
+                  marginLeft: '48.5vw',
+                  marginTop:'2vw',
+                  fontSize: '1.2vw',
+                  justifyContent: 'center',
+                  color:'white',
+                  alignItems: 'center',marginBottom:'1vw',
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}} onClick={redirect}> Register a new Staff </Button>
+                          </tr>
+
             
         </div>
     )
