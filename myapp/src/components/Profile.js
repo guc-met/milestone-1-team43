@@ -3,11 +3,19 @@ import Form from 'react-bootstrap/Form'
 import logo from '../images/guc_logo.png'
 import bg from '../images/1.png'
 import girl from '../images/gif.gif'
+
+import Button from 'react-bootstrap/Button'
+
 import { useHistory } from "react-router";
 export default function Profile() {
     const history = useHistory()
     const redirect1 = () => {
         history.push('/')
+        console.log('true')
+      }
+
+      const redirect = () => {
+        history.push('/Register')
         console.log('true')
       }
     
@@ -250,13 +258,13 @@ export default function Profile() {
                   display: 'flex',
                   alignSelf: 'center',
                   marginRight: 'auto',
-                  marginLeft: '48.5vw',
+                  marginLeft: '55.5vw',
                   marginTop:'2vw',
                   fontSize: '1.2vw',
                   justifyContent: 'center',
                   color:'white',
                   alignItems: 'center',marginBottom:'1vw',
-                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}} onClick={redirect}> Register a new Staff </Button>
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}} onClick={redirect}>Register</Button>
                           </tr>
 
             
