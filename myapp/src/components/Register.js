@@ -2,6 +2,7 @@ import React from 'react'
 import Form from 'react-bootstrap/Form'
 import bg from '../images/1.png'
 import Button from 'react-bootstrap/Button'
+import logo from '../images/guc_logo.png'
 
 
 
@@ -295,7 +296,7 @@ export default function Register() {
                       </Form.Group>
 </tr>
 
-</table> 
+
 
 
 
@@ -310,10 +311,11 @@ export default function Register() {
                   justifyContent: 'center',
                   color:'white',
                   alignItems: 'center',marginBottom:'1vw',
-                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}} onClick={() => {this.refs.video.play()}}> Submit </Button>
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}} onClick={() => {}}> Submit </Button>
                           </tr>
+                          </table> 
 
-                    <video controls ref="welcomeVid">
+                    <video >
                             <source src="VIDEO SOURCE" type="welcomeVid/mp4" />
                     </video>
 

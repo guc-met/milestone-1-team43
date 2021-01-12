@@ -14,10 +14,7 @@ export default function Profile() {
         console.log('true')
       }
 
-      const redirect = () => {
-        history.push('/Register')
-        console.log('true')
-      }
+    
     
     return (
         <div style={{backgroundImage:`url(${bg})`,backgroundSize:'100% 100%',minHeight:'100vh'}}>
@@ -253,19 +250,6 @@ export default function Profile() {
 </table>
 
 
-<tr>
-                          <Button style={{  height: '2vw',
-                  display: 'flex',
-                  alignSelf: 'center',
-                  marginRight: 'auto',
-                  marginLeft: '55.5vw',
-                  marginTop:'2vw',
-                  fontSize: '1.2vw',
-                  justifyContent: 'center',
-                  color:'white',
-                  alignItems: 'center',marginBottom:'1vw',
-                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}} onClick={redirect}>Register</Button>
-                          </tr>
 
             
         </div>

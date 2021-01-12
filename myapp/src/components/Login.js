@@ -19,7 +19,7 @@ export default function LoginAML() {
       }
       const history = useHistory()
 const redirect = () => {
-    history.push('/Profile')
+    history.push('/StaffHP')
     console.log('true')
   }
   const redirect1 = () => {
