@@ -13,6 +13,10 @@ export default function Profile() {
         history.push('/')
         console.log('true')
       }
+      const redirect = () => {
+        history.push('/HR')
+        console.log('true')
+      }
 
     
     
@@ -21,9 +25,23 @@ export default function Profile() {
              <table>
             
             <tr>
+              <td>
+              <Button style={{  height: '2vw',
+                  display: 'flex',
+                  alignSelf: 'center',
+                  marginRight: 'auto',
+               marginLeft:"2vw",
+                  fontSize: '1.2vw',
+                  justifyContent: 'center',
+                  color:'white',
+                  alignItems: 'center',marginBottom:'1vw',
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}} onClick={redirect}>Back</Button>
+              </td>
+              
         <td>
-                <img src={logo}style={{marginLeft: '80vw',marginTop:'2vw',height:'5vw', width:'10vw'}} onClick={redirect1}></img>
-                
+       
+                <img src={logo}style={{marginLeft: '28vw',marginTop:'2vw',height:'5vw', width:'10vw'}} onClick={redirect1}></img>
+               
 </td>
 </tr>
 
@@ -80,6 +98,7 @@ export default function Profile() {
          
                       
     </td>
+
     <td>
     <Form.Group
                         style={{ marginTop:'1vw' }}
@@ -91,11 +110,11 @@ export default function Profile() {
                               textAlign: 'left',
                               fontSize: '1vw',
                               color:"#33b889",
-                              marginLeft: '20vw',
+                              marginLeft: '24vw',
                               marginRight:"1vw",fontWeight:'bold',fontFamily:'Georgia, serif'
                             }}
                           >
-                           Password
+                           ID
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -112,9 +131,9 @@ export default function Profile() {
 
                           }}
                           
-                          type='password'
+                          type='number'
 
-                        //   value=''
+                           value='123456'
                         //   onChange=''
                         />
                       </Form.Group>
@@ -133,7 +152,7 @@ export default function Profile() {
                               textAlign: 'left',
                               fontSize: '1vw',
                               color:"#33b889",
-                              marginLeft: '7vw',
+                              marginLeft: '6.5vw',
                               marginRight:"1vw",fontWeight:'bold',fontFamily:'Georgia, serif'
                             }}
                           >
@@ -172,12 +191,12 @@ export default function Profile() {
                               textAlign: 'left',
                               fontSize: '1vw',
                               color:"#33b889",
-                              marginLeft: '22vw',
+                              marginLeft: '20vw',
                               marginRight:"1vw",
                               fontWeight:'bold',fontFamily:'Georgia, serif'
                             }}
                           >
-                           Type
+                           Password
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -193,7 +212,7 @@ export default function Profile() {
                             outline:'none',fontFamily:'Georgia, serif'
 
                           }}
-                          placeholder="Type"
+                          placeholder="Password"
                           
                           
 
@@ -246,6 +265,49 @@ export default function Profile() {
                         //   onChange=''
                         />
                       </Form.Group>
+                      <td>
+                      <Form.Group
+                        style={{ marginTop:'4vw' }}
+                      >
+                        <Form.Label>
+                          <text
+                            style={{
+                              fontWeight: 'bold',
+                              textAlign: 'left',
+                              fontSize: '1vw',
+                              color:"#33b889",
+                              marginLeft: '22.5vw',
+                              marginRight:"1vw",
+                              fontWeight:'bold',fontFamily:'Georgia, serif'
+                            }}
+                          >
+                           Type
+                          </text>
+                        </Form.Label>
+                        <Form.Control
+                          required
+                          style={{
+                            fontSize: '0.8vw',
+                            width: '20vw',
+                            height: '2.5vw',
+                            borderColor: 'white',
+                            borderRadius: '0.5vw',
+                            borderWidth: '0.1vw',
+                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
+                            outline:'none',fontFamily:'Georgia, serif'
+
+                          }}
+                          placeholder="Type"
+                          
+                          
+
+                        //   value=''
+                        //   onChange=''
+                        />
+                      </Form.Group>
+                      
+         
+                      </td>
 </tr>
 </table>
 
