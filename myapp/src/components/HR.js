@@ -57,6 +57,22 @@ export default function HR() {
         history.push('/Register')
         console.log('true')
       }
+      const redirect9= () => {
+        history.push('/Update')
+        console.log('true')
+      }
+      const redirect10= () => {
+        history.push('/Add')
+        console.log('true')
+      }
+      const redirect11= () => {
+        history.push('/Delete')
+        console.log('true')
+      }
+      const redirect12= () => {
+        history.push('/Other')
+        console.log('true')
+      }
       const handleAlert = () => {
         setShowAlert(true)
         setShowAlertMess('You Signed in Successfully !')
@@ -145,7 +161,7 @@ export default function HR() {
                   justifyContent: 'center',
                   color:'white',
                   alignItems: 'center',marginBottom:'1vw',
-                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}} onClick={redirect3} onClick={redirect4}>Logout</Button>
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}}  onClick={redirect4}>Logout</Button>
  
     </tr>
     </td>
@@ -208,7 +224,65 @@ export default function HR() {
  
     </tr>
     </td>
-   
+    <td>
+    <tr>
+    <Button style={{  height: '2vw',
+                  display: 'flex',
+                  alignSelf: 'center',
+                  marginRight: 'auto',
+                  marginLeft: '5vw',
+                  marginTop:'-10vw',
+                  fontSize: '1.2vw',
+                  justifyContent: 'center',
+                  color:'white',
+                  alignItems: 'center',marginBottom:'1vw',
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}}  onClick={redirect10}>Add</Button>
+ 
+    </tr>
+    <tr>
+    <Button style={{  height: '2vw',
+                  display: 'flex',
+                  alignSelf: 'center',
+                  marginRight: 'auto',
+                  marginLeft: '5vw',
+                  marginTop:'-5.5vw',
+                  fontSize: '1.2vw',
+                  justifyContent: 'center',
+                  color:'white',
+                  alignItems: 'center',marginBottom:'1vw',
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}}  onClick={redirect9}>Update</Button>
+ 
+    </tr>
+    <tr>
+    <Button style={{  height: '2vw',
+                  display: 'flex',
+                  alignSelf: 'center',
+                  marginRight: 'auto',
+                  marginLeft: '5vw',
+                  marginTop:'-0.9vw',
+                  fontSize: '1.2vw',
+                  justifyContent: 'center',
+                  color:'white',
+                  alignItems: 'center',marginBottom:'1vw',
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}}  onClick={redirect11}>Delete</Button>
+ 
+    </tr>
+    
+    <tr>
+    <Button style={{  height: '2vw',
+                  display: 'flex',
+                  alignSelf: 'center',
+                  marginRight: 'auto',
+                  marginLeft: '5vw',
+                  marginTop:'1.2vw',
+                  fontSize: '1.2vw',
+                  justifyContent: 'center',
+                  color:'white',
+                  alignItems: 'center',marginBottom:'1vw',
+                  backgroundColor:'#33b889',border:'none',borderRadius: '0.5vw', outline:'none',fontWeight:'bold',fontFamily:'Georgia, serif'}}  onClick={redirect12}> Other Services</Button>
+ 
+    </tr>
+    </td>
 </table>
 </td>
 </table>

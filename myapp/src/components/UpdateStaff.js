@@ -10,7 +10,7 @@ import { useHistory } from "react-router";
 
 
 
-export default function Register() {
+export default function UpdateStaff() {
     const history = useHistory()
     const [showAlert, setShowAlert] = React.useState(false)
     const [showAlertMess, setShowAlertMess] = React.useState('error')
@@ -34,7 +34,7 @@ export default function Register() {
     
       const handleAlert = () => {
         setShowAlert(true)
-        setShowAlertMess('You Signed in Successfully !')
+        setShowAlertMess('Updated the Staff member  Successfully !')
         setSeverity('success')
        
       }

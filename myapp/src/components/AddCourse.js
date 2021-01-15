@@ -10,7 +10,7 @@ import { useHistory } from "react-router";
 
 
 
-export default function Register() {
+export default function AddLocation() {
     const history = useHistory()
     const [showAlert, setShowAlert] = React.useState(false)
     const [showAlertMess, setShowAlertMess] = React.useState('error')
@@ -34,7 +34,7 @@ export default function Register() {
     
       const handleAlert = () => {
         setShowAlert(true)
-        setShowAlertMess('You Signed in Successfully !')
+        setShowAlertMess('Course Added Successfully !')
         setSeverity('success')
        
       }
@@ -48,7 +48,7 @@ export default function Register() {
           msg={showAlertMess}
         />
 
-<table>
+<table >
             
             <tr>
             <td>
@@ -71,7 +71,7 @@ export default function Register() {
 </td>
 </tr>
 </table>
-<table style={{marginLeft:'-10vw'}}>
+<table style={{marginLeft:'vw'}}>
   <tr>
     <td>
     <Form.Group 
@@ -84,13 +84,13 @@ export default function Register() {
                               textAlign: 'left',
                               fontSize: '1vw',
                               color:"white",
-                              marginLeft: 'vw',
+                              marginLeft: '-5.5vw',
                               marginRight:"1vw",
                               fontFamily:'Georgia, serif'
                              
                             }}
                           >
-                            Name
+                          Course Instructor
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -105,7 +105,7 @@ export default function Register() {
                             boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
                             outline:'none',fontFamily:'Georgia, serif'
                           }}
-                          placeholder="Enter Name"
+                          placeholder="Enter Course Instructor"
                         //   value=''
                         //   onChange=''
                         />
@@ -123,12 +123,12 @@ export default function Register() {
                               textAlign: 'left',
                               fontSize: '1vw',
                               color:"white",
-                              marginLeft: '0.7vw',
+                              marginLeft: '6vw',
                               marginRight:"1vw",fontFamily:'Georgia, serif'
 
                             }}
                           >
-                           ID
+                           Course Name
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -144,9 +144,51 @@ export default function Register() {
                             outline:'none',fontFamily:'Georgia, serif'
 
                           }}
-                          placeholder="Enter ID"
-                          type='email'
+                          placeholder="Enter Course Name"
+                          type=''
 
+                        //   value=''
+                        //   onChange=''
+                        />
+                      </Form.Group>
+
+    </td>
+    
+  </tr>
+  <tr>
+    <td>
+    <Form.Group 
+                        style={{ marginTop:"5vw" ,marginLeft:'20vw' }}
+                      >
+                        <Form.Label>
+                          <text
+                            style={{
+                              fontWeight: 'bold',
+                              textAlign: 'left',
+                              fontSize: '1vw',
+                              color:"white",
+                              marginLeft: '-1vw',
+                              marginRight:"1vw",
+                              fontFamily:'Georgia, serif'
+                             
+                            }}
+                          >
+                            TA Name
+                          </text>
+                        </Form.Label>
+                        <Form.Control
+                          required
+                          style={{
+                            fontSize: '0.8vw',
+                            width: '20vw',
+                            height: '2.5vw',
+                            borderColor: 'white',
+                            borderRadius: '0.5vw',
+                            borderWidth: '0.1vw',
+                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
+                            outline:'none',fontFamily:'Georgia, serif'
+                          }}
+                          placeholder="Enter TA Name"
                         //   value=''
                         //   onChange=''
                         />
@@ -169,7 +211,7 @@ export default function Register() {
 
                             }}
                           >
-                           Gender
+                          Course Coordinator Name
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -185,89 +227,7 @@ export default function Register() {
                             outline:'none',fontFamily:'Georgia, serif'
 
                           }}
-                          placeholder="Gender"
-                          type='Gender'
-
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-    </td>
-  </tr>
-  <tr>
-    <td>
-    <Form.Group 
-                        style={{ marginTop:"5vw" ,marginLeft:'20vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: 'vw',
-                              marginRight:"1vw",
-                              fontFamily:'Georgia, serif'
-                             
-                            }}
-                          >
-                            Email
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-                          }}
-                          placeholder="Enter Email"
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-    </td>
-    <td>
-    <Form.Group
-                        style={{ marginTop:'5vw',marginLeft:'5vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-1vw',
-                              marginRight:"1vw",fontFamily:'Georgia, serif'
-
-                            }}
-                          >
-                           Salary
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-
-                          }}
-                          placeholder="Enter Salary"
+                          placeholder="Enter Course Coordinator Name"
                           type='email'
 
                         //   value=''
@@ -276,47 +236,7 @@ export default function Register() {
                       </Form.Group>
 
     </td>
-    <td>
-    <Form.Group
-                        style={{ marginTop:'5vw',marginLeft:'5vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-vw',
-                              marginRight:"1vw",fontFamily:'Georgia, serif'
-
-                            }}
-                          >
-                           Gender
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-
-                          }}
-                          placeholder="Enter Password"
-                          type='number'
-
-                        value='123456'
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-    </td>
+    
   </tr>
   <tr>
     <td>
@@ -330,13 +250,13 @@ export default function Register() {
                               textAlign: 'left',
                               fontSize: '1vw',
                               color:"white",
-                              marginLeft: '-5vw',
+                              marginLeft: '-3vw',
                               marginRight:"1vw",
                               fontFamily:'Georgia, serif'
                              
                             }}
                           >
-                            Office Location
+                           Slot Number
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -351,51 +271,15 @@ export default function Register() {
                             boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
                             outline:'none',fontFamily:'Georgia, serif'
                           }}
-                          placeholder="Enter Office"
+                          placeholder="Enter Slot Number"
                         //   value=''
                         //   onChange=''
+                        type='number'
                         />
                       </Form.Group>
 
-
     </td>
-    <td><Form.Group 
-                        style={{ marginTop:"5vw" ,marginLeft:'7vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-6vw',
-                              marginRight:"1vw",
-                              fontFamily:'Georgia, serif'
-                             
-                            }}
-                          >
-                            Department
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-                          }}
-                          placeholder="Enter Office"
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group></td>
-                      <td>
+    <td>
     <Form.Group
                         style={{ marginTop:'5vw',marginLeft:'5vw' }}
                       >
@@ -406,12 +290,12 @@ export default function Register() {
                               textAlign: 'left',
                               fontSize: '1vw',
                               color:"white",
-                              marginLeft: '-vw',
+                              marginLeft: '8vw',
                               marginRight:"1vw",fontFamily:'Georgia, serif'
 
                             }}
                           >
-                           Type
+                         Slot Type
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -427,8 +311,8 @@ export default function Register() {
                             outline:'none',fontFamily:'Georgia, serif'
 
                           }}
-                          placeholder="Enter Type"
-                          type='string'
+                          placeholder="Enter Slot Type"
+                          type=''
 
                         //   value=''
                         //   onChange=''
@@ -436,7 +320,89 @@ export default function Register() {
                       </Form.Group>
 
     </td>
+    
+  </tr>
+  <tr>
+    <td>
+    <Form.Group 
+                        style={{ marginTop:"5vw" ,marginLeft:'20vw' }}
+                      >
+                        <Form.Label>
+                          <text
+                            style={{
+                              fontWeight: 'bold',
+                              textAlign: 'left',
+                              fontSize: '1vw',
+                              color:"white",
+                              marginLeft: '-3vw',
+                              marginRight:"1vw",
+                              fontFamily:'Georgia, serif'
+                             
+                            }}
+                          >
+                           Department
+                          </text>
+                        </Form.Label>
+                        <Form.Control
+                          required
+                          style={{
+                            fontSize: '0.8vw',
+                            width: '20vw',
+                            height: '2.5vw',
+                            borderColor: 'white',
+                            borderRadius: '0.5vw',
+                            borderWidth: '0.1vw',
+                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
+                            outline:'none',fontFamily:'Georgia, serif'
+                          }}
+                          placeholder="Enter Department"
+                        //   value=''
+                        //   onChange=''
+                        />
+                      </Form.Group>
 
+    </td>
+    <td>
+    <Form.Group
+                        style={{ marginTop:'5vw',marginLeft:'5vw' }}
+                      >
+                        <Form.Label>
+                          <text
+                            style={{
+                              fontWeight: 'bold',
+                              textAlign: 'left',
+                              fontSize: '1vw',
+                              color:"white",
+                              marginLeft: '5vw',
+                              marginRight:"1vw",fontFamily:'Georgia, serif'
+
+                            }}
+                          >
+                          Course Coverage
+                          </text>
+                        </Form.Label>
+                        <Form.Control
+                          required
+                          style={{
+                            fontSize: '0.8vw',
+                            width: '20vw',
+                            height: '2.5vw',
+                            borderColor: 'white',
+                            borderRadius: '0.5vw',
+                            borderWidth: '0.1vw',
+                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
+                            outline:'none',fontFamily:'Georgia, serif'
+
+                          }}
+                          placeholder="Enter Course Coverage"
+                          type='email'
+
+                        //   value=''
+                        //   onChange=''
+                        />
+                      </Form.Group>
+
+    </td>
     
   </tr>
 </table>

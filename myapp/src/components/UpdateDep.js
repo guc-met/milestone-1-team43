@@ -10,7 +10,7 @@ import { useHistory } from "react-router";
 
 
 
-export default function Register() {
+export default function UpdateFaculty() {
     const history = useHistory()
     const [showAlert, setShowAlert] = React.useState(false)
     const [showAlertMess, setShowAlertMess] = React.useState('error')
@@ -34,7 +34,7 @@ export default function Register() {
     
       const handleAlert = () => {
         setShowAlert(true)
-        setShowAlertMess('You Signed in Successfully !')
+        setShowAlertMess('Department Updated Successfully !')
         setSeverity('success')
        
       }
@@ -48,7 +48,7 @@ export default function Register() {
           msg={showAlertMess}
         />
 
-<table>
+<table >
             
             <tr>
             <td>
@@ -71,7 +71,7 @@ export default function Register() {
 </td>
 </tr>
 </table>
-<table style={{marginLeft:'-10vw'}}>
+<table style={{marginLeft:'-2vw'}}>
   <tr>
     <td>
     <Form.Group 
@@ -90,7 +90,90 @@ export default function Register() {
                              
                             }}
                           >
-                            Name
+                            Department ID
+                          </text>
+                        </Form.Label>
+                        <Form.Control
+                          required
+                          style={{
+                            fontSize: '0.8vw',
+                            width: '20vw',
+                            height: '2.5vw',
+                            borderColor: 'white',
+                            borderRadius: '0.5vw',
+                            borderWidth: '0.1vw',
+                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
+                            outline:'none',fontFamily:'Georgia, serif'
+                          }}
+                          placeholder="Enter ID"
+                        //   value=''
+                        //   onChange=''
+                        />
+                      </Form.Group>
+
+    </td>
+    <td>
+    <Form.Group
+                        style={{ marginTop:'5vw',marginLeft:'5vw' }}
+                      >
+                        <Form.Label>
+                          <text
+                            style={{
+                              fontWeight: 'bold',
+                              textAlign: 'left',
+                              fontSize: '1vw',
+                              color:"white",
+                              marginLeft: 'vw',
+                              marginRight:"1vw",fontFamily:'Georgia, serif'
+
+                            }}
+                          >
+                           Department Name
+                          </text>
+                        </Form.Label>
+                        <Form.Control
+                          required
+                          style={{
+                            fontSize: '0.8vw',
+                            width: '20vw',
+                            height: '2.5vw',
+                            borderColor: 'white',
+                            borderRadius: '0.5vw',
+                            borderWidth: '0.1vw',
+                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
+                            outline:'none',fontFamily:'Georgia, serif'
+
+                          }}
+                          placeholder="Enter Name"
+                          type=''
+
+                        //   value=''
+                        //   onChange=''
+                        />
+                      </Form.Group>
+
+    </td>
+    
+  </tr>
+  <tr>
+    <td>
+    <Form.Group 
+                        style={{ marginTop:"5vw" ,marginLeft:'20vw' }}
+                      >
+                        <Form.Label>
+                          <text
+                            style={{
+                              fontWeight: 'bold',
+                              textAlign: 'left',
+                              fontSize: '1vw',
+                              color:"white",
+                              marginLeft: '-3vw',
+                              marginRight:"1vw",
+                              fontFamily:'Georgia, serif'
+                             
+                            }}
+                          >
+                            Head Of Department
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -123,12 +206,12 @@ export default function Register() {
                               textAlign: 'left',
                               fontSize: '1vw',
                               color:"white",
-                              marginLeft: '0.7vw',
+                              marginLeft: '5vw',
                               marginRight:"1vw",fontFamily:'Georgia, serif'
 
                             }}
                           >
-                           ID
+                          Courses
                           </text>
                         </Form.Label>
                         <Form.Control
@@ -144,8 +227,8 @@ export default function Register() {
                             outline:'none',fontFamily:'Georgia, serif'
 
                           }}
-                          placeholder="Enter ID"
-                          type='email'
+                          placeholder="Enter Courses"
+                          type=''
 
                         //   value=''
                         //   onChange=''
@@ -153,295 +236,11 @@ export default function Register() {
                       </Form.Group>
 
     </td>
-    <td>
-    <Form.Group
-                        style={{ marginTop:'5vw',marginLeft:'5vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-1vw',
-                              marginRight:"1vw",fontFamily:'Georgia, serif'
-
-                            }}
-                          >
-                           Gender
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-
-                          }}
-                          placeholder="Gender"
-                          type='Gender'
-
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-    </td>
-  </tr>
-  <tr>
-    <td>
-    <Form.Group 
-                        style={{ marginTop:"5vw" ,marginLeft:'20vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: 'vw',
-                              marginRight:"1vw",
-                              fontFamily:'Georgia, serif'
-                             
-                            }}
-                          >
-                            Email
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-                          }}
-                          placeholder="Enter Email"
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-    </td>
-    <td>
-    <Form.Group
-                        style={{ marginTop:'5vw',marginLeft:'5vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-1vw',
-                              marginRight:"1vw",fontFamily:'Georgia, serif'
-
-                            }}
-                          >
-                           Salary
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-
-                          }}
-                          placeholder="Enter Salary"
-                          type='email'
-
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-    </td>
-    <td>
-    <Form.Group
-                        style={{ marginTop:'5vw',marginLeft:'5vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-vw',
-                              marginRight:"1vw",fontFamily:'Georgia, serif'
-
-                            }}
-                          >
-                           Gender
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-
-                          }}
-                          placeholder="Enter Password"
-                          type='number'
-
-                        value='123456'
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-    </td>
-  </tr>
-  <tr>
-    <td>
-    <Form.Group 
-                        style={{ marginTop:"5vw" ,marginLeft:'20vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-5vw',
-                              marginRight:"1vw",
-                              fontFamily:'Georgia, serif'
-                             
-                            }}
-                          >
-                            Office Location
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-                          }}
-                          placeholder="Enter Office"
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-
-    </td>
-    <td><Form.Group 
-                        style={{ marginTop:"5vw" ,marginLeft:'7vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-6vw',
-                              marginRight:"1vw",
-                              fontFamily:'Georgia, serif'
-                             
-                            }}
-                          >
-                            Department
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-                          }}
-                          placeholder="Enter Office"
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group></td>
-                      <td>
-    <Form.Group
-                        style={{ marginTop:'5vw',marginLeft:'5vw' }}
-                      >
-                        <Form.Label>
-                          <text
-                            style={{
-                              fontWeight: 'bold',
-                              textAlign: 'left',
-                              fontSize: '1vw',
-                              color:"white",
-                              marginLeft: '-vw',
-                              marginRight:"1vw",fontFamily:'Georgia, serif'
-
-                            }}
-                          >
-                           Type
-                          </text>
-                        </Form.Label>
-                        <Form.Control
-                          required
-                          style={{
-                            fontSize: '0.8vw',
-                            width: '20vw',
-                            height: '2.5vw',
-                            borderColor: 'white',
-                            borderRadius: '0.5vw',
-                            borderWidth: '0.1vw',
-                            boxShadow: 'inset 1px 1px 4px rgba(0, 0, 0, 0.25)',
-                            outline:'none',fontFamily:'Georgia, serif'
-
-                          }}
-                          placeholder="Enter Type"
-                          type='string'
-
-                        //   value=''
-                        //   onChange=''
-                        />
-                      </Form.Group>
-
-    </td>
-
     
   </tr>
 </table>
 <Form.Group
-                        style={{ marginTop:'5vw',marginLeft:'48vw' }}
+                        style={{ marginTop:'5vw',marginLeft:'50vw' }}
                       >
                       <Button  style={{height: '2vw',
                   display: 'flex',
